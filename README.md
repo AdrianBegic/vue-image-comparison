@@ -6,7 +6,7 @@ Simple Vue.js component to compare two images using slider.
 
 ## Demo
 
-[DEMO](https://adrianbegic.github.io/vue-image-comparison/)
+[DEMO]()
 
 ## Features
 
