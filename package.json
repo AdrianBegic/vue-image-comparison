@@ -1,7 +1,7 @@
 {
   "name": "vue-image-comparison",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -38,5 +38,25 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianBegic/vue-image-comparison.git"
+  },
+  "keywords": [
+    "picture",
+    "comparison",
+    "image",
+    "comparison",
+    "slider",
+    "vue"
+  ],
+  "author": "Adrian Begic",
+  "license": "MIT ",
+  "bugs": {
+    "url": "https://github.com/AdrianBegic/vue-image-comparison/issues"
+  },
+  "homepage": "https://github.com/AdrianBegic/vue-image-comparison#readme"
 }
