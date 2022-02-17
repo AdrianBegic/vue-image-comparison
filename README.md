@@ -20,7 +20,7 @@ npm install --vue-image-comparison
 
 In your component file:
 
-```xml
+```js
 import ImageCompare from './components/image-compare.vue'
 
 export default {
@@ -38,7 +38,7 @@ export default {
 
 }
 ```
-```
+
 
 ```xml
 <template>
