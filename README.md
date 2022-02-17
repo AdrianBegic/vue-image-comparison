@@ -1,24 +1,40 @@
-# vue-image-comparison
+# Vue Compare Image
 
-## Project setup
-```
-npm install
+
+Simple Vue.js component to compare two images using slider.
+
+
+## Demo
+
+[DEMO]()
+
+## Features
+
+- Simple
+- Size difference between two images handled correctly. 
+
+## How to use
+
+In the shell:
+
+
+npm install --save vue-compare-image
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+In your component file:
+
+```js
+import VueCompareImage from 'vue-compare-image';
+
+export default {
+  name: 'app',
+  components: { VueCompareImage },
+};
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+```xml
+<template>
+  <VueCompareImage leftImage="image1.jpg" rightImage="image2.jpg" />;
+</template>
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
