@@ -1,16 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<h1> DEMO </h1>
+ <ImageCompare :BeforeImage="BeforeImage" :AfterImage="AfterImage"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ImageCompare from './components/image-compare.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+  ImageCompare
+  },
+
+  data() {
+    return {
+      BeforeImage: require('./assets/pic1.jpg'),
+      AfterImage: require('./assets/pic2.jpg'),
+    }
   }
+
 }
 </script>
 
