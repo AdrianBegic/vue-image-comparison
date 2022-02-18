@@ -4,9 +4,6 @@
 Simple Vue.js component to compare two images using slider.
 
 
-## Demo
-
-[DEMO]()
 
 ## Features
 
@@ -18,23 +15,34 @@ Simple Vue.js component to compare two images using slider.
 In the shell:
 
 
-npm install --save vue-compare-image
+npm install --vue-image-comparison
 ```
 
 In your component file:
 
-```js
-import VueCompareImage from 'vue-compare-image';
+
+import ImageCompare from './components/image-compare.vue'
 
 export default {
-  name: 'app',
-  components: { VueCompareImage },
-};
+  name: 'App',
+  components: {
+  ImageCompare
+  },
+
+  data() {
+    return {
+      BeforeImage: require('./assets/pic1.jpg'),
+      AfterImage: require('./assets/pic2.jpg'),
+    }
+  }
+
+}
 ```
+
 
 ```xml
 <template>
-  <VueCompareImage leftImage="image1.jpg" rightImage="image2.jpg" />;
+  <ImageCompare :BeforeImage="BeforeImage" :AfterImage="AfterImage"/>
 </template>
 ```
 
