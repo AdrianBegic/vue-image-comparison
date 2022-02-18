@@ -41,7 +41,7 @@
     "not dead"
   ],
   "description": "Image Compare Vue",
-  "main": "dist/src/components/image-compare.common.js",
+  "main": "./src/components/image-compare.common.js",
   "files": [
     "dist/*",
     "src/*",

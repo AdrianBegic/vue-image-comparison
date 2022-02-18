@@ -21,7 +21,7 @@ npm install --vue-image-comparison
 In your component file:
 
 
-import ImageCompare from './components/image-compare.vue'
+import ImageCompare from 'vue-image-comparison'
 
 export default {
   name: 'App',
