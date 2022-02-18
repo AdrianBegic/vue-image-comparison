@@ -40,7 +40,7 @@
     "not dead"
   ],
   "description": "## Project setup ``` npm install ```",
-  "main": "babel.config.js",
+  "main": "image-compare.vue",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AdrianBegic/vue-image-comparison.git"
