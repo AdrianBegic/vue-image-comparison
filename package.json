@@ -1,12 +1,12 @@
 {
   "name": "vue-image-comparison",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build:lib": "vue-cli-service build --target lib --name image-compare ./src/image-compare.vue"
+    "build-library": "vue-cli-service build --target lib --name vue-image-comparison ./src/install.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -41,14 +41,8 @@
     "not dead"
   ],
   "description": "Image Compare Vue",
-  "main": "./src/components/image-compare.common.js",
-  "files": [
-    "dist/*",
-    "src/*",
-    "public/*",
-    "*.json",
-    "*.js"
-  ],
+  "main": "../vue-image-comparison/src/components/image-compare.vue",
+  "files": ["dist/*"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AdrianBegic/vue-image-comparison.git"
