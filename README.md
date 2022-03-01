@@ -10,15 +10,21 @@ Simple Vue.js component to compare two images using slider.
 - Simple
 - Size difference between two images handled correctly. 
 
+
+![alt text](https://i.ibb.co/7tYNPjQ/vue-image-compare.png)
+
+
 ## How to use
+
 
 In the shell:
 
 
 npm install --vue-image-comparison
-```
 
 In your component file:
+```vue
+
 
 
 import ImageCompare from 'vue-image-comparison'
@@ -45,4 +51,15 @@ export default {
   <ImageCompare :BeforeImage="BeforeImage" :AfterImage="AfterImage"/>
 </template>
 ```
+Control the sizing of the images
+
+```xml
+img, svg, figure {
+    min-height: 800px;
+    max-height: 800px;
+    min-width: 800px;
+    max-width: 800px;
+  }
+```
+
 
