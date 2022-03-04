@@ -1,4 +1,4 @@
-# Vue Compare Image
+# Vue Compare Image | Works With Vue 3
 
 
 Simple Vue.js component to compare two images using slider.
