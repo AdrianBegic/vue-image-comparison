@@ -22,14 +22,13 @@ export default {
 props: {
    BeforeImage: null,
     AfterImage: null,
+  SlideConfig: {
+            type: Object,
+            required: true,
+        },
 },
    
- 
 
-
- 
- 
-  
 };
 </script>
 
@@ -43,6 +42,7 @@ figure {
 
 figure img:first-of-type {
   width: 100%;
+  height: 100%;
   clip-path: inset(0 calc(100% - var(--fraction, 50%)) 0 0);
 }
 
@@ -80,7 +80,7 @@ figure input::-webkit-slider-thumb {
   height: var(--thumb-width);
   width: var(--thumb-width);
   border-radius: 50%;
-  background: #000;
+  background: v-bind("SlideConfig.slideBg");
   cursor: ew-resize;
 }
 
@@ -88,8 +88,8 @@ figure input::-moz-range-thumb {
   height: var(--thumb-width);
   width: var(--thumb-width);
   border-radius: 50%;
-  background: #000;
-  border: solid 3px #fff;
+  background: v-bind("SlideConfig.slideBg");
+  border: v-bind("SlideConfig.slideBorder");
   cursor: ew-resize;
 }
 </style>
