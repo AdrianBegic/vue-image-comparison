@@ -75,15 +75,3 @@ img, svg, figure {
 ```
 
 
-Control the sizing of the images
-
-
-```xml
-img, svg, figure {
-    min-height: 800px;
-    max-height: 800px;
-    min-width: 800px;
-    max-width: 800px;
-  }
-```
-
