@@ -11,12 +11,9 @@ Simple Vue.js component to compare two images using slider.
 - Size difference between two images handled correctly. 
 
 
-<<<<<<< HEAD
-![alt text](../vue-image-comparison/src/assets/compare.gif)
-=======
-![alt text](https://i.ibb.co/7tYNPjQ/vue-image-compare.png)
 
->>>>>>> 59da005bb30204030539272fc50335f29a2287fc
+![compare gif](https://iili.io/Ele4ff.gif)
+
 
 ## How to use
 
