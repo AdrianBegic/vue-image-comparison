@@ -12,7 +12,7 @@ Simple Vue.js component to compare two images using slider.
 
 
 
-![alt text](../vue-image-comparison/src/assets/compare.gif)
+![alt text](https://i.ibb.co/KsmM79q/compare.gif)
 
 
 
