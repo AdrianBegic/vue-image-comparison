@@ -2,12 +2,19 @@
   "name": "vue-image-comparison",
   "version": "0.1.4",
   "private": false,
+  "description": "Image Compare Vue",
+  "author": "Adrian Begic",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "build-library": "vue-cli-service build --target lib --name vue-image-comparison ./src/install.js"
   },
+  "main": "../vue-image-comparison/src/components/image-compare.vue",
+  "files": [
+    "dist/*"
+  ],
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^3.0.0"
@@ -15,11 +22,25 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.15",
     "@vue/cli-plugin-eslint": "~4.5.15",
+    "@vue/cli-plugin-unit-jest": "~4.5.15",
     "@vue/cli-service": "~4.5.15",
     "@vue/compiler-sfc": "^3.0.0",
+    "@vue/test-utils": "^2.0.0-rc.17",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0"
+    "eslint-plugin-vue": "^7.0.0",
+    "typescript": "~3.9.3",
+    "vue-jest": "^5.0.0-0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      ".*\\.(vue)$": "vue-jest"
+    }
   },
   "eslintConfig": {
     "root": true,
@@ -33,20 +54,28 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {},
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
   ],
-  "description": "Image Compare Vue",
-  "main": "../vue-image-comparison/src/components/image-compare.vue",
-  "files": ["dist/*"],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AdrianBegic/vue-image-comparison.git"
+  "bugs": {
+    "url": "https://github.com/AdrianBegic/vue-image-comparison/issues"
   },
+  "homepage": "https://github.com/AdrianBegic/vue-image-comparison#readme",
   "keywords": [
     "picture",
     "comparison",
@@ -55,10 +84,9 @@
     "slider",
     "vue"
   ],
-  "author": "Adrian Begic",
   "license": "MIT ",
-  "bugs": {
-    "url": "https://github.com/AdrianBegic/vue-image-comparison/issues"
-  },
-  "homepage": "https://github.com/AdrianBegic/vue-image-comparison#readme"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianBegic/vue-image-comparison.git"
+  }
 }
